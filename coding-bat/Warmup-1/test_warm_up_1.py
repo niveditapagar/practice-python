@@ -1,7 +1,7 @@
 import unittest
 
 import sleep_in, monkey_trouble, sum_double, diff21, parrot_trouble, makes10, near_hundred, pos_neg, not_string, \
-    missing_char
+    missing_char, front_back, front3
 
 
 class WarmUp1(unittest.TestCase):
@@ -70,6 +70,20 @@ class WarmUp1(unittest.TestCase):
         self.assertEqual(missing_char.missing_char("kitten", 1), "ktten")
         self.assertEqual(missing_char.missing_char("kitten", 0), "itten")
         self.assertEqual(missing_char.missing_char("kitten", 5), "kitte")
+
+    def test_front_back(self):
+        self.assertEqual(front_back.front_back("code"), "eodc")
+        self.assertEqual(front_back.front_back(""), "")
+        self.assertEqual(front_back.front_back("a"), "a")
+        self.assertEqual(front_back.front_back("so"), "os")
+        self.assertEqual(front_back.front_back("chocolate"), "ehocolatc")
+
+    def test_front3(self):
+        self.assertEqual(front3.front3(""), "")
+        self.assertEqual(front3.front3("a"), "aaa")
+        self.assertEqual(front3.front3("so"), "sososo")
+        self.assertEqual(front3.front3("cat"), "catcatcat")
+        self.assertEqual(front3.front3("chocolate"), "chochocho")
 
 
 if __name__ == '__main__':
