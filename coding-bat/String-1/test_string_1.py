@@ -1,6 +1,6 @@
 import unittest
 import hello_name, make_abba, make_tags, make_out_word, extra_end, first_two, first_half, without_end, combo_string, \
-    non_start
+    non_start, left2
 
 
 class MyTestCase(unittest.TestCase):
@@ -71,6 +71,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(non_start.non_start("ab", "xy"), "by")
         self.assertEqual(non_start.non_start("ab", "x"), "b")
         self.assertEqual(non_start.non_start("a", "x"), "")
+
+    def test_left2(self):
+        self.assertEqual(left2.left2("Woo"), "oWo")
+        self.assertEqual(left2.left2("Hello"), "lloHe")
+        self.assertEqual(left2.left2("Hi"), "Hi")
 
 
 if __name__ == '__main__':
