@@ -1,6 +1,6 @@
 # practice-python
- This is my way of revisiting Python!
+ This repository consists of solutions to common python problems listed on leading practice websites. Each website has its own directory in this repository along with analogous sub-directories and unittests. 
 
-## Links
+### Websites Covered
 
-- [Coding Bat](https://codingbat.com/python)
+- [CodingBat code practice - Python](https://codingbat.com/python)
